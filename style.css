@@ -1,0 +1,49 @@
+body {
+    font-family: "Montserrat", Arial;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divCalificaciones {
+    width: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+input {
+    padding: 20px;
+    width: 100%;
+    margin: 10px;
+    border-radius: 5px;
+    border-color: black;
+}
+
+button {
+    width: 341px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.divResultados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
