@@ -16,9 +16,9 @@
     <header>
         <nav>
             <ul>
-                <li>Inicio</li>
-                <li>Saber promedio</li>
-                <li>Cuanto necesito para pasar</li>
+                <li><a href="#">Pagina principal</a></li>
+                <li><a href="#">Saber promedio</a></li>
+                <li><a href="#">Cuanto necesito para pasar</a></li>
             </ul>
         </nav>
     </header>
@@ -26,18 +26,19 @@
     <p>Ingresa tus calificaciones</p>
 
     <div class="divCalificaciones">
-        <form action="">
-            <input type="number" placeholder="Primer parcial">
-            <input type="number" placeholder="Segundo parcial">
-            <input type="number" placeholder="Tercer parcial">
-            <button type="submit">ENVIAR</button>
+        <form>
+            <input type="number" placeholder="Primer parcial" id="input1">
+            <input type="number" placeholder="Segundo parcial" id="input2">
+            <input type="number" placeholder="Tercer parcial" id="input3">
+            <button type="button" id="botonCalcular" onclick="mostrarCalificaciones()">CALCULAR</button>
         </form>
     </div>
 
-    <div class="divResultados">
+    <!-- <div class="divResultados">
         <h2>8.5</h2>
         <p>¡Aprobaste el cuatrimestre!</p>
-    </div>
+    </div> -->
 </body>
+<script src="./index.js"></script>
 
 </html>
