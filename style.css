@@ -33,7 +33,7 @@ input {
 
 button {
     width: 341px;
-    padding: 20px;
+    padding: 10px;
     margin: 10px;
     border-radius: 5px;
     background-color: white;
@@ -66,19 +66,25 @@ li {
     margin-right: 20px;
 }
 
-a:hover{
+a:hover {
     color: rgb(132, 0, 255);
     transition: 0.3s;
 }
 
 a {
-    text-decoration: none;
+    margin-top: 10px;
     color: black;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .divResultados {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+p {
+    width: 340px;
+    text-align: center;
 }

@@ -23,13 +23,22 @@
         </nav>
     </header>
     <h1>SEAC</h1>
-    <p>Ingresa tus calificaciones</p>
+    <p id="pInstruccion">Cuentame, ¿Con que promedio se <strong>excenta la materia</strong> que quieres pasar?</p>
 
-    <div class="divCalificaciones">
+    <div class="divCalificaciones" id="divPregunta">
+        <form>
+            <input type="number" placeholder="Promedio" id="inputPregunta">
+            <button type="button" id="botonPregunta" onclick="obtenerPromedioParaExcentar()">SIGUIENTE</button>
+        </form>
+    </div>
+
+    <div class="divCalificaciones" id="divCalificaciones">
         <form>
             <input type="number" placeholder="Primer parcial" id="input1">
             <input type="number" placeholder="Segundo parcial" id="input2">
             <input type="number" placeholder="Tercer parcial" id="input3">
+            <input type="number" placeholder="Examen Final" id="inputE">
+            <button type="button" id="botonCalificacionExtra">AGREGAR CALIFICACION EXAMEN FINAL</button>
             <button type="button" id="botonCalcular" onclick="mostrarCalificaciones()">CALCULAR</button>
         </form>
     </div>
