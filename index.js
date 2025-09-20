@@ -12,6 +12,7 @@ let pInstruccion = document.getElementById("pInstruccion");
 let promedioGeneral;
 let promedioMateria;
 let promedioFinal;
+let logo = document.getElementById("logo");
 
 divCalificaciones.style.display = "none";
 divResultados.style.display = "none";
@@ -19,7 +20,7 @@ inputE.style.display = "none";
 
 botonCalificacionExtra.addEventListener("click", () => {
   inputE.style.display = "block";
-  botonCalificacionExtra.style.display = "none"
+  botonCalificacionExtra.style.display = "none";
 });
 
 function mostrarCalificaciones() {
@@ -67,5 +68,6 @@ function obtenerPromedioParaExcentar() {
   divPregunta.style.display = "none";
   console.log(promedioMateria);
   pInstruccion.innerHTML = "Ingresa tus calificaciones";
+  logo.style.display = "none";
   return promedioMateria;
 }
