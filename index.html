@@ -18,13 +18,13 @@
 </head>
 
 <body>
-    <h1>[PROMED.IOS]</h1>
+    <h1 id="tituloH1">PROMED.IOS</h1>
     <img id="logo" src="./assets/caraAzulAnimada.gif" alt="">
     <p id="pInstruccion"> ¿Con que promedio se EXCENTA la materia que quieres pasar?</p>
 
     <div class="divCalificaciones" id="divPregunta">
         <form>
-            <input type="number" placeholder="[PROMEDIO]" id="inputPregunta">
+            <input type="number" placeholder="[INGRESA EL PROMEDIO]" id="inputPregunta">
             <button type="button" id="botonPregunta" onclick="obtenerPromedioParaExcentar()">CONTINUAR</button>
         </form>
     </div>
@@ -34,7 +34,7 @@
             <input type="number" placeholder="[PRIMER PARCIAL]" id="input1">
             <input type="number" placeholder="[SEGUNDO PARCIAL]" id="input2">
             <input type="number" placeholder="[TERCER PARCIAL]" id="input3">
-            <input type="number" placeholder="Examen Final" id="inputE">
+            <input type="number" placeholder="[EXAMEN FINAL]" id="inputE">
             <button type="button" id="botonCalificacionExtra">AGREGAR CALIFICACION EXAMEN FINAL</button>
             <button type="button" id="botonCalcular" onclick="mostrarCalificaciones()">CALCULAR</button>
         </form>
@@ -42,7 +42,7 @@
     </div>
 
     <div class="divResultados" id="divResultados">
-        <h1>¡APROBASTE!</h1>
+        <h1 style="font-family: 'Sixtyfour Convergence';">¡APROBASTE!</h1>
         <p>Parece que esta vez podras dormir tranquilo</p>
     </div>
 </body>
