@@ -18,34 +18,43 @@
 </head>
 
 <body>
-    <h1 id="tituloH1">PROMED.IOS</h1>
-    <img id="logo" src="./assets/caraAzulAnimada.gif" alt="">
-    <p id="pInstruccion"> ¿Con que promedio se EXCENTA la materia que quieres pasar?</p>
+    <h1 id="tituloh1">PROMED.IOS</h1>
+    <div id="divPresentacion">
+        <img id="logo" src="./assets/caraAzulAnimada.gif" alt="">
+        <p>Para conocer tu promedio de este cuatrimestre presiona el boton debajo</p>
+        <button id="btnIniciar">INICIAR</button>
+    </div>
 
     <div class="divCalificaciones" id="divPregunta">
+        <p id="pInstruccion"> ¿Con que promedio se excenta la materia que quieres pasar?</p>
         <form>
-            <input type="number" placeholder="[INGRESA EL PROMEDIO]" id="inputPregunta">
-            <button type="button" id="botonPregunta" onclick="obtenerPromedioParaExcentar()">CONTINUAR</button>
+            <div>
+                <h2 id="promedioh2">8.0</h2>
+                <span>
+                    <button type="button" id="btnDisminuir" class="btnFlechas">-</button>
+                    <button type="button" id="btnAumentar" class="btnFlechas">+</button>
+                </span>
+            </div>
+            <button type="submit" id="botonPregunta">CONTINUAR</button>
         </form>
     </div>
 
     <div class="divCalificaciones" id="divCalificaciones">
+        <p id="pInstruccion">Dime, cuales fueron tus calificaciones</p>
         <form>
             <input type="number" placeholder="[PRIMER PARCIAL]" id="input1">
             <input type="number" placeholder="[SEGUNDO PARCIAL]" id="input2">
             <input type="number" placeholder="[TERCER PARCIAL]" id="input3">
-            <input type="number" placeholder="[EXAMEN FINAL]" id="inputE">
+            <input type="number" placeholder="[EXAMEN FINAL]" id="input4">
             <button type="button" id="botonCalificacionExtra">AGREGAR CALIFICACION EXAMEN FINAL</button>
-            <button type="button" id="botonCalcular" onclick="mostrarCalificaciones()">CALCULAR</button>
+            <button type="button" id="botonCalcular">CALCULAR</button>
         </form>
         <img src="./assets/personajePensando.png" alt="">
     </div>
 
     <div class="divResultados" id="divResultados">
-        <h1 style="font-family: 'Sixtyfour Convergence';">¡APROBASTE!</h1>
-        <p>Parece que esta vez podras dormir tranquilo</p>
     </div>
 </body>
-<script src="./index.js"></script>
+<script src="./index2.js"></script>
 
 </html>

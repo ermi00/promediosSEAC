@@ -1,19 +1,19 @@
 body {
     font-family: monospace, sans-serif;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: black;
     color: cyan;
-    border: 1px solid skyblue;
+    border: 1px solid cyan;
     height: 100vh;
     margin: 10px;
+    padding-top: 100px;
 }
 
 h1 {
-    margin-bottom: 0px;
     font-family: "Sixtyfour", monospace;
+    margin-bottom: 30px;
 }
 
 
@@ -29,6 +29,11 @@ form {
     flex-direction: column;
     align-items: center;
     width: 100%;
+}
+
+#pInstruccion{
+    font-family: monospace;
+    font-size: 15px;
 }
 
 input {
@@ -88,16 +93,58 @@ a {
     align-items: center;
 }
 
-.divResultados, a{
+.divResultados,
+a {
     color: cyan
 }
 
 p {
+    width: 345px;
     text-align: center;
 }
 
 img {
     margin-top: 20px;
-    width: 350px;
+    width: 290px;
     margin-bottom: 20px;
+}
+
+#divPregunta,
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#divPregunta,
+span {
+    display: flex;
+    align-items: center;
+}
+
+#divPregunta, h2 {
+    font-size: 60px;
+    font-family: "Sixtyfour";
+}
+
+.btnFlechas {
+    width: 90px;
+    height: 50px;
+    margin: 0px;
+    font-size: 25px;
+    padding: 0;
+}
+
+#botonPregunta{
+    padding: 15px;
+    width: 180px;
+}
+
+#h1Resultado{
+    font-size: 30px;
+}
+
+#imgResultado{
+    width: 350px;
+    margin: 0;
 }
