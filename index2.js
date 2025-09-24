@@ -39,9 +39,13 @@ function decision() {
         1
       )}</h1>
       <p id="pResultado">Podras dormir tranquilo esta noche</p>
-      <button id = "btnIrAlInicio" >IR AL INICIO</button>
+      <button id = "btnIrAlInicio">IR AL INICIO</button>
     `;
     console.log(`Promedio: ${promedio}, Promedio Final: ${promedioFinal}`);
+    let btnIrAlInicio = document.getElementById("btnIrAlInicio");
+    btnIrAlInicio.addEventListener("click", () => {
+      window.location.replace("./index.html");
+    });
   } else {
     badSong.play();
     divResultados.innerHTML = `
@@ -54,6 +58,45 @@ function decision() {
       <button id = "btnIrAlInicio" >IR AL INICIO</button>
     `;
     console.log(`Promedio: ${promedio}, Promedio Final: ${promedioFinal}`);
+    let btnIrAlInicio = document.getElementById("btnIrAlInicio");
+    let imgResultado = document.getElementById("imgResultado");
+    let pResultado = document.getElementById("pResultado");
+
+    btnIrAlInicio.addEventListener("click", () => {
+      let frases = [
+        "",
+        "QUIERES IR AL INICIO?",
+        "ENSERIO?",
+        "NOLOSE",
+        "NO TE SIENTAS MAL",
+        "NO ES TU CULPA",
+        "SI NO...",
+        "DEL SISTEMA",
+        "Solo piensalo, el verdadero conocimiento no nace de seguir órdenes ciegamente, sino de cuestionarlas. Pero el sistema teme a los que piensan demasiado... teme a los que no encajan. Así que entrena a los jóvenes para obedecer, no para liderar.",
+        "Si este mundo tuviera un sistema educativo justo, no perderíamos talentos en aulas sofocantes, ni desperdiciaríamos años en aprender lo que una máquina podría enseñar mejor. La educación debería liberar... pero en cambio, encadena.",
+        "Es cruel, lo sé. Pero así es la verdad. ¿Qué futuro puede construir un rebaño de mediocres? La educación debería ser un filtro, una guillotina silenciosa que deje pasar solo a los que realmente valen.",
+        "De cualquier forma, ya no interesa",
+        "...",
+      ];
+      contador++;
+
+      btnIrAlInicio.innerHTML = `${frases[contador]}`;
+      if (contador == 7) {
+        imgResultado.src = "./assets/personajeFrente.png";
+        pResultado.style.display = "none";
+        songBackground.play();
+      } else if (contador == 9) {
+        imgResultado.src = "./assets/personajeAC.png";
+        btnIrAlInicio.style.textAlign = "start";
+        pResultado.style.display = "none";
+      } else if (contador == 10) {
+        imgResultado.src = "./assets/personajeEspalda.png";
+        btnIrAlInicio.style.textAlign = "start";
+        pResultado.style.display = "none";
+      } else if (contador == 8) {
+        btnIrAlInicio.style.textAlign = "start";
+      }
+    });
   }
 }
 
@@ -114,45 +157,6 @@ botonCalcular.addEventListener("click", () => {
     promedioFinal = calcularPromedioFinal(promedio, calificacion4);
   }
   decision();
-  let btnIrAlInicio = document.getElementById("btnIrAlInicio");
-  let imgResultado = document.getElementById("imgResultado");
-  let pResultado = document.getElementById("pResultado");
-
-  btnIrAlInicio.addEventListener("click", () => {
-    let frases = [
-      "",
-      "QUIERES IR AL INICIO?",
-      "ENSERIO?",
-      "NOLOSE",
-      "NO TE SIENTAS MAL",
-      "NO ES TU CULPA",
-      "SI NO...",
-      "DEL SISTEMA",
-      "Solo piensalo, el verdadero conocimiento no nace de seguir órdenes ciegamente, sino de cuestionarlas. Pero el sistema teme a los que piensan demasiado... teme a los que no encajan. Así que entrena a los jóvenes para obedecer, no para liderar.",
-      "Si este mundo tuviera un sistema educativo justo, no perderíamos talentos en aulas sofocantes, ni desperdiciaríamos años en aprender lo que una máquina podría enseñar mejor. La educación debería liberar... pero en cambio, encadena.",
-      "Es cruel, lo sé. Pero así es la verdad. ¿Qué futuro puede construir un rebaño de mediocres? La educación debería ser un filtro, una guillotina silenciosa que deje pasar solo a los que realmente valen.",
-      "De cualquier forma, ya no interesa",
-      "...",
-    ];
-    contador++;
-
-    btnIrAlInicio.innerHTML = `${frases[contador]}`;
-    if (contador == 7) {
-      imgResultado.src = "./assets/personajeFrente.png";  
-      pResultado.style.display = "none";
-      songBackground.play();
-    } else if (contador == 9) {
-      imgResultado.src = "./assets/personajeAC.png";
-      btnIrAlInicio.style.textAlign = "start";
-      pResultado.style.display = "none";
-    } else if (contador == 10) {
-      imgResultado.src = "./assets/personajeEspalda.png";
-      btnIrAlInicio.style.textAlign = "start";
-      pResultado.style.display = "none";
-    } else if(contador == 8){
-      btnIrAlInicio.style.textAlign = "start";
-    }
-  });
 });
 
 divCalificaciones.style.display = "none";
