@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --rojo: #e90a0a;
+    --blanco: #f4e8d7;
+    --gris: #cacaca;
+}
+
+body {
+    font-family: "Montserrat", Helvetica, sans-serif;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.sectionPresentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.sectionPresentacion img {
+    display: block;
+    max-width: 100%;
+}
+
+.divInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1Conoce,
+.h1Promedio {
+    width: 100%;
+    font-size: 13vw;
+    text-align: center;
+    margin: 0;
+    line-height: 0.9;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+}
+
+.h1Conoce {
+    font-weight: 400;
+}
+
+.h1Promedio {
+    font-weight: 900;
+}
+
+p {
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    padding: 15px 50px;
+    background-color: var(--blanco);
+    border-radius: 10px;
+    border: none;
+    -webkit-box-shadow: 0px 5px 0px 0px var(--gris);
+    box-shadow: 0px 5px 0px 0px var(--gris);
+    margin-bottom: 20px;
+        border: 1px solid var(--gris);
+    color: var(--rojo);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a {
+    font-family: "Montserrat", Helvetica, sans-serif;
+    text-decoration: none;
+    color: var(--rojo);
+    font-size: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+.divBotones{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.divBotonesOpciones button{
+    width: 100%;
+    padding: 15px 50px;
+    -webkit-box-shadow: 0px 5px 0px 0px var(--gris);
+    box-shadow: 0px 5px 0px 0px var(--gris);
+    background-color: var(--rojo);
+    border: 1px solid var(--gris);
+    color: var(--blanco);
+    font-size: 18px;
+    font-weight: normal ;
+}
+
+/* .divBotonContinuar button{
+    width: 100%;
+    padding: 15px 50px;
+    -webkit-box-shadow: 0px 5px 0px 0px var(--gris);
+    box-shadow: 0px 5px 0px 0px var(--gris);
+    background-color: var(--rojo);
+    border: 1px solid var(--gris);
+    color: var(--blanco);
+    font-size: 18px;
+} */
+
+
+.divBotonContinuar button{
+    width: 100%;
+    padding: 15px 50px;
+    -webkit-box-shadow: 0px 5px 0px 0px var(--gris);
+    box-shadow: 0px 5px 0px 0px var(--gris);
+    background-color: var(--blanco);
+    border: 1px solid var(--gris);
+    color: var(--rojo);
+    font-size: 18px;
+    font-weight: bold;
+}
